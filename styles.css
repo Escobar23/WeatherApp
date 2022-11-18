@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    height: 100vh;
+    background: rgb(95, 10, 135);
+    background: linear-gradient(0deg, rgba(95, 10, 135, 1) 0%, rgba(234, 191, 203, 1) 100%);
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input{
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin: 5px;
+    background: none;
+    color: #fff;  
+    font-size: 18px;
+
+}
+
+input:focus {
+    outline: none;
+
+}
+
+button{
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #A4508B;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.error{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 5rem;
+    color: #fff;
+    text-align: center;
+
+}
+
+.container{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 5rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 54px 6px rgba(0, 0, 0, 0.32);
+        -webkit-box-shadow: 10px 10px 54px 6px rgba(0, 0, 0, 0.32);
+        -moz-box-shadow: 10px 10px 54px 6px rgba(0, 0, 0, 0.32);
+
+}
+
+.ciudad{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.temp{
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.imgClima{
+    max-width: 100px;
+    margin: 0 auto;
+
+}
+
+.descrp{
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+
