@@ -6,6 +6,7 @@ function cargarCiudad(ciudad) {
     $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "&appid=fdd533266e28101881f610f2b8f1ebe1&lang=es "
         , function (data) {
 
+            document.querySelector(".error").style.visibility = 'hidden'
             
             document.querySelector(".container").style.visibility = "visible"
             document.querySelector("#ciudad").textContent = data.name
@@ -15,12 +16,14 @@ function cargarCiudad(ciudad) {
 
             document.querySelector("#icon").setAttribute('src', "http://openweathermap.org/img/wn/" + data.weather[0].icon + ".png")
 
-            document.querySelector("#descrp").textContent = data.weather[0].description       
+            document.querySelector("#descrp").textContent = data.weather[0].description     
+            
 
         }).fail(function (data) {
             let objectError = JSON.parse(data.responseText)
             let message = objectError.message
 
+            document.querySelector(".error").style.visibility = 'visible'
             document.querySelector(".error").innerHTML = message
             document.querySelector(".container").style.visibility = "hidden"
 
