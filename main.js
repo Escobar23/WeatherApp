@@ -22,6 +22,7 @@ function cargarCiudad(ciudad) {
             let message = objectError.message
 
             document.querySelector(".error").innerHTML = message
+            document.querySelector(".container").style.visibility = "hidden"
 
         })
 
