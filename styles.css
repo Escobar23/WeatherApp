@@ -14,10 +14,16 @@ header{
     padding: 1rem;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
+}
+
+h1{
+    color: #fff;
+    font-weight: 600;
+    margin: 5px;
 }
 
 input{
@@ -73,14 +79,14 @@ button{
 }
 
 .ciudad{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     color: #fff;
 
 }
 
 .temp{
-    font-size: 30px;
+    font-size: 35px;
     color: #fff;
 
 }
@@ -92,7 +98,7 @@ button{
 }
 
 .descrp{
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
     
 }
