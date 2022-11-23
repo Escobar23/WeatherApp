@@ -35,5 +35,6 @@ btnE.addEventListener('click', (e) => {
 
     e.preventDefault()
     cargarCiudad(input.value)
+    input.value = ''
 
 })
